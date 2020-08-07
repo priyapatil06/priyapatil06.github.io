@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+	<style type="text/css">
+		*(
+			margin: 0;
+			padding: 0;
+		 )
+
+		body{
+			background-color: #0F2B43;
+			font-family: sans-serif;
+			margin-top: 40px;
+		 	}
+
+		.regform{
+			width: 800px;
+			background-color: rgb(0,0,0,0.6);
+			margin: auto;
+			color: #FFFFFF;
+			padding: 10px 0px 10px 0px;
+			text-align: center;
+			border-radius: 15px 15px 0px 0px;
+			text-decoration: underline;
+			}
+
+		.main{
+			background-color: rgb(0,0,0,0.3);
+			width: 800px;
+			margin: auto;
+			}
+
+		form{
+			padding: 10px;
+			}
+
+		#name{
+			width: 100%;
+			height: 100px;
+			}
+
+		.name{
+			margin-left: 25px;
+			margin-top: 30px;
+			width: 125px;
+			color: black;
+			font-size: 18px;
+			font-weight: 700;
+			}
+
+	.firstname{
+		position: relative;
+		left: 200px;
+		top: -50px;
+		line-height: 40px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		}
+
+	.lastname{
+		position: relative;
+		left: 417px;
+		top: -95px;
+		line-height: 40px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+		}
+	.firstlabel{
+		position: relative;
+		color: #595959;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: 202px;
+		top: -64px;
+		}
+
+	.lastlabel{
+		position: relative;
+		color: #595959;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: 150px;
+		top: -65px;
+			}
+
+	.email{
+		position: relative;
+		left: 200px;
+		top: -50px;
+		line-height: 40px;
+		width: 480px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: black;
+	}
+
+	.emailid{
+		position: relative;
+		color: #595959;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: -329px;
+		top: -21px;
+	}
+
+	.number{
+		position: relative;
+		left: 200px;
+		top: -50px;
+		line-height: 40px;
+		width: 250px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: black;
+	}
+
+	.phone-number{
+		position: relative;
+		color: #595959;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: -100px;
+		top: -21px;
+	}
+
+	.option{
+		position: relative;
+		left: 200px;
+		top: -50px;
+		line-height: 40px;
+		width: 532px;
+		height: 40px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: black;
+		outline: none;
+		overflow: hidden;
+	}
+
+	.option option{
+		font-size: 20px
+	}
+
+	#customer{
+		left: 20px;
+		font-size: 23px;
+	}
+
+	.radio{
+		display: inline-block;
+		padding-right: 75px;
+		font-size: 18px;
+		margin-left: 25px;
+		top: 100px;
+		color: black
+	}
+
+	.radio input{
+		width: 20px;
+		height: -100px;
+		border-radius: 50%;
+		cursor: pointer;
+		outline: none;
+	}
+
+	button{
+		background-color: cyan;
+		display: block;
+		margin: 20px 0px 0px 250px;
+		text-align: center;
+		border-radius: 12px;
+		border: 2px solid #366472;
+		padding: 14px 110px;
+		outline: none;
+		color: black;
+		cursor: pointer;
+		transition: 0.25px;
+	}
+
+	button:hover{
+		background-color: #C66C7A;
+	}
+
+	</style>
+	</head>
+<body>
+
+
+	<div class="regform">
+		<h1>Registration Form</h1>
+	</div>
+	<div class="main">
+		<form>
+			<div id="name">
+				<h2>Name</h2>
+				<input class="firstname" type="text" name="f_name"><br>
+				<label class="firstlabel">first name</label>
+				<input class="lastname" type="text" name="l_name">
+				<label class="lastlabel" >last name</label>		
+			</div>
+				
+			<h2>E-mail Id</h2>
+			<input class="email" type="text" name="email">
+			<label class="emailid">Email id</label>
+
+			<h2>Phone Number</h2>
+			<input class="number" type="text" name="phone">
+			<label class="phone-number">Phone Number</label>
+
+			<h2>State</h2>
+			<select class="option" name="State">
+				<option disabled="disabled" selected="selected">---Choose Option---</option>
+				<option>Maharashtra</option>
+				<option>Gujarat</option>
+				<option>Rajasthan</option>
+			</select>
+
+			<h2 id="customer">Gender</h2>
+
+			<label class="radio">
+				<input class="radio1" type="radio" checked="checked" name="">
+				<span class="checkmark"></span>
+				Male
+
+				<input class="radio2" type="radio" name="">
+				<span class="checkmark"></span>
+				Female
+			</label>
+
+
+			<button type="submit"><B>Register</B></button><br>
+		</form>
+	</div>
+</body>
+</html>
